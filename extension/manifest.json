@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "CodeScout",
+  "version": "0.1.0",
+  "description": "One-click snapshot capture for Microstudio and Pixelpad projects.",
+  "permissions": ["activeTab", "clipboardWrite", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://microstudio.dev/*",
+        "https://*.microstudio.dev/*",
+        "https://microstudio.io/*",
+        "https://*.microstudio.io/*",
+        "https://pixelpad.io/*"
+      ],
+      "js": ["content_script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "https://microstudio.dev/*",
+    "https://*.microstudio.dev/*",
+    "https://microstudio.io/*",
+    "https://*.microstudio.io/*",
+    "https://pixelpad.io/*"
+  ],
+  "action": {
+    "default_title": "CodeScout",
+    "default_popup": "popup.html"
+  }
+}
