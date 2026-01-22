@@ -6,9 +6,8 @@ One-click project context capture for Microstudio and Pixelpad.
 
 Install from the Chrome Web Store: https://chromewebstore.google.com/detail/codescout/dpbagbbpdocodlodbeiibbeclgohjcma
 
-1) Install from the Chrome Web Store: https://chromewebstore.google.com/detail/codescout/dpbagbbpdocodlodbeiibbeclgohjcma
-2) Open a Microstudio or Pixelpad project.
-3) Click the extension icon and press **Copy Snapshot**.
+1) Open a Microstudio or Pixelpad project.
+2) Click the extension icon and press **Copy Snapshot**.
 
 ## Option B: Userscript (Tampermonkey)
 
